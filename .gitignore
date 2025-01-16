@@ -3,3 +3,6 @@ sdd/
 
 # Ignorar qualquer arquivo ou diretório que contenha "sdd" no nome
 *sdd*
+
+# Ignorar .shp
+*.shp

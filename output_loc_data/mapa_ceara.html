@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7173d0943bd5665d4fa87acb0d64e999 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7173d0943bd5665d4fa87acb0d64e999" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7173d0943bd5665d4fa87acb0d64e999 = L.map(
+                "map_7173d0943bd5665d4fa87acb0d64e999",
+                {
+                    center: [-5.4984, -39.3206],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2dc510720d839575a91b18fe9b95de0f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2dc510720d839575a91b18fe9b95de0f.addTo(map_7173d0943bd5665d4fa87acb0d64e999);
+        
+    
+            var marker_7a9e58cc5991dc62470b824f762fa27e = L.marker(
+                [-3.74805555, -40.34583333],
+                {}
+            ).addTo(map_7173d0943bd5665d4fa87acb0d64e999);
+        
+    
+        var popup_296b22d055b76d02062c25773a80f2ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d17a738964afb5170c620c34b3c0a83 = $(`<div id="html_1d17a738964afb5170c620c34b3c0a83" style="width: 100.0%; height: 100.0%;">Sobral</div>`)[0];
+                popup_296b22d055b76d02062c25773a80f2ec.setContent(html_1d17a738964afb5170c620c34b3c0a83);
+            
+        
+
+        marker_7a9e58cc5991dc62470b824f762fa27e.bindPopup(popup_296b22d055b76d02062c25773a80f2ec)
+        ;
+
+        
+    
+    
+            var marker_1da1ec06f9f3ab6df1fada69543b64be = L.marker(
+                [-5.90555555, -38.62777777],
+                {}
+            ).addTo(map_7173d0943bd5665d4fa87acb0d64e999);
+        
+    
+        var popup_2b9fdc08cdbb113cd57c17f8161fe723 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_837d36c523c26dd04a6b0492bce68402 = $(`<div id="html_837d36c523c26dd04a6b0492bce68402" style="width: 100.0%; height: 100.0%;">Jaguaribe</div>`)[0];
+                popup_2b9fdc08cdbb113cd57c17f8161fe723.setContent(html_837d36c523c26dd04a6b0492bce68402);
+            
+        
+
+        marker_1da1ec06f9f3ab6df1fada69543b64be.bindPopup(popup_2b9fdc08cdbb113cd57c17f8161fe723)
+        ;
+
+        
+    
+    
+            var marker_6b228ebd6a5951587a464a333607aeb6 = L.marker(
+                [-6.01749999, -40.28138888],
+                {}
+            ).addTo(map_7173d0943bd5665d4fa87acb0d64e999);
+        
+    
+        var popup_13dfb161a7482bafb285fbf9a6d193e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8215be9fed06ae51f6b3d93342a796b = $(`<div id="html_a8215be9fed06ae51f6b3d93342a796b" style="width: 100.0%; height: 100.0%;">Tauá</div>`)[0];
+                popup_13dfb161a7482bafb285fbf9a6d193e7.setContent(html_a8215be9fed06ae51f6b3d93342a796b);
+            
+        
+
+        marker_6b228ebd6a5951587a464a333607aeb6.bindPopup(popup_13dfb161a7482bafb285fbf9a6d193e7)
+        ;
+
+        
+    
+    
+            var marker_0b3f32396c0ab48c7f4479653194a2f8 = L.marker(
+                [-4.83777777, -37.69972221],
+                {}
+            ).addTo(map_7173d0943bd5665d4fa87acb0d64e999);
+        
+    
+        var popup_fb7e09fe0034b86fa4ca60ea6cc1b2bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d8b4d86e6e33c1bcf4ff8bc2c294c22 = $(`<div id="html_8d8b4d86e6e33c1bcf4ff8bc2c294c22" style="width: 100.0%; height: 100.0%;">Jaguaruana</div>`)[0];
+                popup_fb7e09fe0034b86fa4ca60ea6cc1b2bf.setContent(html_8d8b4d86e6e33c1bcf4ff8bc2c294c22);
+            
+        
+
+        marker_0b3f32396c0ab48c7f4479653194a2f8.bindPopup(popup_fb7e09fe0034b86fa4ca60ea6cc1b2bf)
+        ;
+
+        
+    
+</script>
+</html>

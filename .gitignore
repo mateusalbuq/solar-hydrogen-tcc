@@ -1,0 +1,5 @@
+# Ignorar todos os arquivos e diretórios dentro de uma pasta chamada sdd
+sdd/
+
+# Ignorar qualquer arquivo ou diretório que contenha "sdd" no nome
+*sdd*

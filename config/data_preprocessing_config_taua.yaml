@@ -1,0 +1,81 @@
+# INITIAL SETTINGS
+# ----------------
+input_directory: input   # Diretório de entrada
+output_directory_missing_data: output_missing_data   # Diretório de saída
+output_directory_preprocessing: output_preprocessing
+
+header_line_number: 9   # Número da linha onde começa o cabeçalho do arquivo
+
+input_data_parameters:   # Parâmetros da estação meteorológica
+  codigo_wmo: A324
+  estacao: TAUA
+  data_inicial: 2015-01-01
+  data_final: 2024-08-31
+
+utc_offset: -3   # Fuso horário
+resample_freq: H   # Frequência dos dados
+
+# ANALYSIS RANGE
+# --------------
+initial_year: "2015"
+final_year: "2019"
+
+
+# SANITY CHECKS
+# -------------
+min_precipitation: 0
+
+min_atm_pressure: 880   # pressao atmosferica em mB não pode ser menor que 880 (pressão estimada para ponto mais alto do estado - 1160m - Pico da Serra Branca)
+max_atm_pressure: 1200   # nem maior que 1200 - trocar por nulo
+
+min_cpu_temp: 0  
+max_cpu_temp: 100  
+
+min_air_temp: 8   # temperatura não deve ser menor que 8 graus (temperatura mínima do estado - 11degC)
+max_air_temp: 45   # nem maior que 45 graus (temperatura máxima do estado - 42degC)
+
+min_dew_temp: -22   # cálculo segundo https://meteorologia.unifei.edu.br/pag/ponto_orvalho/ c/ margem de 2degC
+max_dew_temp: 44
+
+min_rel_humidity: 0
+max_rel_humidity: 100
+
+min_wind_dir: 0
+max_wind_dir: 360
+
+min_wind_speed: 0   # velocidade do vento não deve ser menor que 0 m/s
+max_wind_speed: 114   #  nem maior que 114 m/s (maior valor já obtido no mundo)
+
+max_solar_radiation: 4900  # radiação solar não deve ser maior que 4900 W/m² (constante solar)
+
+# OUTLIER DETECTION
+# -----------------
+outlier_detection:
+  pressure:
+    dp_factor: 2.6
+    iqr_factor: 1.5
+    epsilon: 0.007
+  temperature:
+    dp_factor: 2.6
+    iqr_factor: 1.5
+    epsilon: 0.007
+  humidity:
+    dp_factor: 2.6
+    iqr_factor: 1.5
+    epsilon: 0.007
+  wind_direction:
+    dp_factor: 2.6
+    iqr_factor: 3.1
+    epsilon: 0.007
+  wind_max:
+    dp_factor: 2.6
+    iqr_factor: 1.5
+    epsilon: 0.007
+  wind_speed:
+    dp_factor: 2.6
+    iqr_factor: 1.5
+    epsilon: 0.007
+  radiation:
+    dp_factor: 2.6
+    iqr_factor: 1.5
+    epsilon: 0.007

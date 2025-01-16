@@ -1,0 +1,20 @@
+,% de Dados Corrigidos
+precipitacao_total_horario,0.0
+pressao_atmosferica_nivel_estacao_horaria,0.0
+pressao_atmosferica_reduzida_nivel_mar_aut,0.0
+pressao_atmosferica_max_hora_ant,0.0
+pressao_atmosferica_min_hora_ant,0.0
+temperatura_cpu_estacao,0.0
+temperatura_ar_bulbo_seco_horaria,0.0
+temperatura_maxima_hora_ant,0.0
+temperatura_minima_hora_ant,0.0
+temperatura_ponto_orvalho,0.0
+temperatura_orvalho_max_hora_ant,0.0
+temperatura_orvalho_min_hora_ant,0.0
+umidade_rel_max_hora_ant,0.0
+umidade_rel_min_hora_ant,0.0
+umidade_relativa_ar_horaria,0.0
+vento_direcao_horaria,0.0
+vento_rajada_maxima,0.0
+vento_velocidade_horaria,0.0
+radiacao_global,-9.03222761119175

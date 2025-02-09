@@ -47,7 +47,7 @@ sarimax_sobral.ipynb
 - **config/**: Contém arquivos de configuração com variáveis globais, como o nome das estações, que são utilizadas para parametrizar os scripts de cada estação.
 - **docs/**: Documentação técnica e referências relacionadas ao projeto.
 - **input/**: Dados de entrada, incluindo dados meteorológicos e informações de localização das estações.
-- **output_forecast/**: Resultados das predições e outputs dos experimentos de random search.
+- **output_forecast/**: Resultados das predições e outputs dos experimentos de random search. A ser criado ao rodar os arquivos de Random Search
 - **output_loc_data/**: Saídas referentes à geração de mapas com a localização das estações.
 - **output_missing_data/**: Resultados iniciais da busca por dados faltantes.
 - **output_preprocessing/**: Dados que passaram pelo processo de pré-processamento.
